@@ -5,14 +5,14 @@ import java.util.Arrays;
 public class SquareArray {
 
 	public static void main(String[] args) {
-		int arr[]  = new int[] {1,2,3,4,5};
+		int arr[]  = new int[] {1,-2,3,4,5};
 		squareArray(arr);
 		System.out.println(Arrays.toString(arr));
 	}
 	
 	static int[] squareArray(int arr[]) {
 		for(int i=0;i<arr.length;i++) {
-			arr[i] = arr[i]*arr[i];
+			arr[i] = arr[i]<0 ? -1* arr[i]*arr[i] : arr[i]* arr[i];
 		}
 		return arr;
 	}
