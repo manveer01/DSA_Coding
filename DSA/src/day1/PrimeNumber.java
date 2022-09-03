@@ -17,6 +17,15 @@ public class PrimeNumber {
 //	}
 	
 	
+//	100
+//    2 * 50 = 100
+//    4 *  25 = 100
+//    5 * 20 = 100
+//    10 * 10 = 100      after the sqrt numbers started repeating so doing till sqrt(n)
+//    20  * 5  = 100
+//    25 * 4 = 100
+//    50 * 2 = 100
+	
 	public static boolean isPrime(int num) {
 		if(num<=1) return false;
 		for(int i=2;i<=Math.sqrt(num);i++) {
